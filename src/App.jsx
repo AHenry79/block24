@@ -5,7 +5,6 @@ function App() {
   const [puppies, setPuppies] = useState(puppyList);
   const [featPupId, setFeatPupId] = useState(null);
   const featuredPup = puppies.find((pup) => pup.id === featPupId);
-  console.log(featuredPup);
   return (
     <>
       <div>
@@ -16,13 +15,14 @@ function App() {
               onClick={() => {
                 setFeatPupId(p.id);
               }}
+              id={"names"}
             >
               {p.name}
             </p>
           );
         })}
         {featPupId && (
-          <div>
+          <div id={"feat"}>
             <h2>{featuredPup.name}</h2>
             <ul>
               <li>Age: {featuredPup.age}</li>

@@ -108,3 +108,19 @@ button:focus-visible {
 .read-the-docs {
   color: #888;
 }
+
+#names {
+  font-size: 32px;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#feat {
+  font-size: 32px;
+  padding: 40px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 15px;
+  display: block;
+}
